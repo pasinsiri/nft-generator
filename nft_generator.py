@@ -26,3 +26,7 @@ def gen_json(n: int):
 
     with open(os.path.join(TARGET_DIR, str(n + 1) + '.json'), 'w') as f:
         json.dump(res, f)
+
+for i in range(N_OBJECT):
+    gen_json(i)
+    print(f'Object {i + 1} is completed')
